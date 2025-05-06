@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="shortcut icon" href="#" type="image/x-icon" />
+
+        <!-- Style -->
+        <link rel="stylesheet" href="style.css" />
+
+        <title>Book Keeper</title>
+    </head>
+    <body>
+        <button popovertarget="dialog" class="add-bookmark">
+            add bookmark
+        </button>
+
+        <div class="bookmark-container"></div>
+
+        <div id="dialog" popover class="popover">
+            <header>
+                <h3>add bookmark</h3>
+
+                <button popovertarget="dialog">
+                    <ion-icon
+                        name="close-outline"
+                        aria-label="close button"
+                    ></ion-icon>
+                </button>
+            </header>
+
+            <div class="dialog-content">
+                <form>
+                    <div class="form-group">
+                        <label for="website">website name</label>
+                        <input type="text" id="website" class="website-name" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="url">website URL</label>
+                        <input type="text" id="url" class="website-url" />
+                    </div>
+
+                    <input type="submit" value="save" />
+                </form>
+            </div>
+        </div>
+
+        <script src="script.js" defer></script>
+
+        <!-- Ionicons -->
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+            nomodule
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+        ></script>
+    </body>
+</html>
